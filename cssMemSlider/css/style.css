@@ -1,0 +1,55 @@
+body {
+	height: 100vh;
+    width: 100vw;
+	background: radial-gradient(circle at right bottom, #9E3802 0%, #5E2201 8%, #DE4F02 30%, #EB5303 40%, #C44602, transparent 120%);
+    overflow: hidden;
+    font-size: 10px;
+}
+
+.header {
+    padding-top: 80px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 5em;
+    text-align: center;
+    font-family: 'Anton', ' Helvetica', sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    text-shadow: 
+    -0   -1px 1px #000000,
+     0   -1px 1px #000000,
+    -0    1px 1px #000000,
+     0    1px 1px #000000,
+    -1px -0   1px #000000,
+     1px -0   1px #000000,
+    -1px  0   1px #000000,
+     1px  0   1px #000000,
+    -1px -1px 1px #000000,
+     1px -1px 1px #000000,
+    -1px  1px 1px #000000,
+     1px  1px 1px #000000,
+    -1px -1px 1px #000000,
+     1px -1px 1px #000000,
+    -1px  1px 1px #000000,
+     1px  1px 1px #000000;
+}
+
+.header .mem-around {
+	position: absolute;
+	left: 50%;
+	top: 5%;
+	width: 90px;
+	height: auto;
+	offset-path: path('m-259.532715,95.338944c0,-53.028619 115.873691,-95.981801 258.927631,-95.981801c143.05394,0 258.927631,42.953182 258.927631,95.981801c0,53.028619 -115.873691,95.981801 -258.927631,95.981801c-143.05394,0 -258.927631,-42.953182 -258.927631,-95.981801z');
+	animation: move 20s linear infinite;
+	offset-rotate: 0deg;
+    /* offset-path: ; */
+}
+@keyframes move{
+	100%{
+		offset-distance: 100%;
+	}
+}
