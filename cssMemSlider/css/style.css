@@ -47,7 +47,7 @@ h1 {
 	width: 6%;
 	height: auto;
 	offset-path: path('m-259.532715,95.338944c0,-53.028619 115.873691,-95.981801 258.927631,-95.981801c143.05394,0 258.927631,42.953182 258.927631,95.981801c0,53.028619 -115.873691,95.981801 -258.927631,95.981801c-143.05394,0 -258.927631,-42.953182 -258.927631,-95.981801z');
-	animation: move 10s linear infinite;
+	animation: move 20s linear infinite;
 	offset-rotate: 0deg;
 }
 @keyframes move{
@@ -58,7 +58,6 @@ h1 {
 
 .main {
     padding-top: 5vh;
-    margin: auto;
     display: flex;
     justify-content: center;
 }
@@ -103,10 +102,45 @@ h1 {
     background-image: url(../assets/img/Meme-5.png);
 }
 
+.slider-controls {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    padding: 0 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-quotes {
+    width: 20vw;
+    overflow: hidden;
+    font-family: ' Helvetica', 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 1.8em;
+}
+
+.quote {
+    width: 20%;
+    height: auto;
+    text-shadow: 
+		-0   -1px 0   #000000,
+		 0   -1px 0   #000000,
+		-0    1px 0   #000000,
+		 0    1px 0   #000000,
+		-1px -0   0   #000000,
+		 1px -0   0   #000000,
+		-1px  0   0   #000000,
+		 1px  0   0   #000000,
+		-1px -1px 0   #000000,
+		 1px -1px 0   #000000,
+		-1px  1px 0   #000000,
+		 1px  1px 0   #000000,
+		-1px -1px 0   #000000,
+		 1px -1px 0   #000000,
+		-1px  1px 0   #000000,
+		 1px  1px 0   #000000;
+}
+
 .navigation {
-    /* position: absolute;
-    bottom: 16px;
-    left: 50px; */
     display: flex;
 }
 
@@ -126,33 +160,62 @@ h1 {
 }
 
 input {
-    /* position: absolute; */
-    /* visibility: hidden; */
     display: none;
 }
 
-.slides {
+.slides,
+.quote-wrapper {
     width: 500%;
     height: 100%;
     display: flex;
+    align-items: center;
 }
 
-#radio-1:checked ~ .active {
+/* === slides switch === */
+
+#radio-1:checked ~ .slides .active {
     margin-left: 0;
 }
 
-#radio-2:checked ~ .active {
+#radio-2:checked ~ .slides .active {
     margin-left: -20%;
 }
 
-#radio-3:checked ~ .active {
+#radio-3:checked ~ .slides .active {
     margin-left: -40%;
 }
 
-#radio-4:checked ~ .active {
+#radio-4:checked ~ .slides .active {
     margin-left: -60%;
 }
 
-#radio-5:checked ~ .active {
+#radio-5:checked ~ .slides .active {
     margin-left: -80%;
+}
+
+/* === quotes switch === */
+
+#radio-1:checked ~ .slider-controls .quote-wrapper {
+    margin-left: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#radio-2:checked ~ .slider-controls .quote-wrapper {
+    margin-left: -100%;
+    transition: all 0.5s ease-in-out;
+}
+
+#radio-3:checked ~ .slider-controls .quote-wrapper {
+    margin-left: -200%;
+    transition: all 0.5s ease-in-out;
+}
+
+#radio-4:checked ~ .slider-controls .quote-wrapper {
+    margin-left: -300%;
+    transition: all 0.5s ease-in-out;
+}
+
+#radio-5:checked ~ .slider-controls .quote-wrapper {
+    margin-left: -400%;
+    transition: all 0.5s ease-in-out;
 }
