@@ -9,7 +9,8 @@ body {
 }
 
 .header {
-    padding-top: 80px;
+    padding-top: 10vh;
+    height: 27%;
     margin: 0 auto;
 }
 
@@ -43,10 +44,10 @@ h1 {
 	position: absolute;
 	left: 50%;
 	top: 5%;
-	width: 90px;
+	width: 6%;
 	height: auto;
 	offset-path: path('m-259.532715,95.338944c0,-53.028619 115.873691,-95.981801 258.927631,-95.981801c143.05394,0 258.927631,42.953182 258.927631,95.981801c0,53.028619 -115.873691,95.981801 -258.927631,95.981801c-143.05394,0 -258.927631,-42.953182 -258.927631,-95.981801z');
-	animation: move 20s linear infinite;
+	animation: move 10s linear infinite;
 	offset-rotate: 0deg;
 }
 @keyframes move{
@@ -56,17 +57,18 @@ h1 {
 }
 
 .main {
-    padding-top: 55px;
+    padding-top: 5vh;
     margin: auto;
     display: flex;
     justify-content: center;
 }
 
 .slider-wrapper {
-    width: 500px;
-    height: 500px;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: auto;
     overflow: hidden;
-    position: absolute;
     border: #5E2201 solid 2px;
     background-color: #9E3802;
     border-radius: 10px;
@@ -74,7 +76,7 @@ h1 {
 
 .slide {
     width: 20%;
-    height: 500px;
+    height: 50vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -102,9 +104,9 @@ h1 {
 }
 
 .navigation {
-    position: absolute;
+    /* position: absolute;
     bottom: 16px;
-    left: 50px;
+    left: 50px; */
     display: flex;
 }
 
@@ -124,8 +126,9 @@ h1 {
 }
 
 input {
-    position: absolute;
-    visibility: hidden;
+    /* position: absolute; */
+    /* visibility: hidden; */
+    display: none;
 }
 
 .slides {
