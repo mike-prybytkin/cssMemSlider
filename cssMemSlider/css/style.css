@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-	height: 105vh;
+	height: 100vh;
     width: 100%;
 	background: radial-gradient(circle at right bottom, #9E3802 0%, #5E2201 8%, #DE4F02 30%, #EB5303 40%, #C44602, transparent 120%);
     background-size: contain;
@@ -60,7 +60,7 @@ h1 {
 }
 
 .main {
-    padding-top: 5vh;
+    padding-top: 10vh;
     display: flex;
     justify-content: center;
 }
@@ -267,7 +267,6 @@ input {
     .header {
         padding-top: 5vh;
         height: 17%;
-        margin: 0 auto;
     }
     
     h1 {
@@ -276,11 +275,18 @@ input {
 
     .header .mem-around {
         top: -5%;
-        left: 45%;
         width: 14%;
         height: auto;
-        animation: move 10s linear infinite;
-        offset-distance: 50%;
+        animation: move 6s alternate infinite ease-in-out;
+    }
+
+    @keyframes move{
+        0% {
+            offset-distance: 57%;
+          }
+        100%{
+            offset-distance:93%;
+        }
     }
 
     .slider-wrapper {
@@ -299,5 +305,32 @@ input {
     .quote-wrapper {
         padding-top: 1vh;
         padding-bottom: 1vh;
+    }
+}
+
+@media (max-width: 499px) {
+
+    .header {
+        padding-top: 4vh;
+    }
+    
+    h1 {
+        font-size: 4em;
+    }
+
+    .header .mem-around {
+        top: -7%;
+        width: 14%;
+        height: auto;
+        animation: move 6s alternate infinite ease-in-out;
+    }
+
+    @keyframes move{
+        0% {
+            offset-distance: 65%;
+          }
+        100%{
+            offset-distance:85%;
+        }
     }
 }
