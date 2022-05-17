@@ -1,5 +1,5 @@
 body {
-	height: 100vh;
+	height: 115vh;
     width: 100%;
 	background: radial-gradient(circle at right bottom, #9E3802 0%, #5E2201 8%, #DE4F02 30%, #EB5303 40%, #C44602, transparent 120%);
     background-size: contain;
@@ -56,7 +56,7 @@ h1 {
 }
 
 .main {
-    padding-top: 10vh;
+    padding-top: 5vh;
     display: flex;
     justify-content: center;
 }
@@ -64,7 +64,7 @@ h1 {
 .slider-wrapper {
     display: flex;
     flex-direction: column;
-    width: 40vw;
+    width: 35vw;
     height: auto;
     overflow: hidden;
     border: #5E2201 solid 0.15rem;
@@ -86,15 +86,16 @@ h1 {
 
 .slide {
     width: 20%;
-    height: 50vh;
-    background-position: center;
+    height: 60vh;
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100% 100%;
     transition: all 0.5s ease-in-out;
 }
 
 .mem-1 {
     background-image: url(../assets/img/Meme-1.jpg);
+    height: 100%;
 }
 
 .mem-2 {
@@ -110,7 +111,7 @@ h1 {
 }
 
 .mem-5 {
-    background-image: url(../assets/img/Meme-5.png);
+    background-image: url(../assets/img/Meme-5.jpg);
 }
 
 .slider-controls {
@@ -271,6 +272,10 @@ input {
     
     h1 {
         font-size: 3em;
+    }
+
+    .main {
+        padding-top: 8vh;
     }
 
     .header .mem-around {
