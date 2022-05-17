@@ -1,7 +1,3 @@
-html, body {
-    font-size: 10px; /* для того, чтобы все em и rem на странице были крантны 10 */
-}
-
 body {
 	height: 100vh;
     width: 100%;
@@ -18,35 +14,35 @@ body {
 }
 
 h1 {
-    font-size: 5em;
+    font-size: 3.5em;
     text-align: center;
     font-family: 'Anton', ' Helvetica', sans-serif;
     color: #ffffff;
     letter-spacing: 0.1em;
     font-weight: 300;
     text-shadow: 
-    -0   -0.1rem 0.1rem #000000,
-     0   -0.1rem 0.1rem #000000,
-    -0    0.1rem 0.1rem #000000,
-     0    0.1rem 0.1rem #000000,
-    -0.1rem -0   0.1rem #000000,
-     0.1rem -0   0.1rem #000000,
-    -0.1rem  0   0.1rem #000000,
-     0.1rem  0   0.1rem #000000,
-    -0.1rem -0.1rem 0.1rem #000000,
-     0.1rem -0.1rem 0.1rem #000000,
-    -0.1rem  0.1rem 0.1rem #000000,
-     0.1rem  0.1rem 0.1rem #000000,
-    -0.1rem -0.1rem 0.1rem #000000,
-     0.1rem -0.1rem 0.1rem #000000,
-    -0.1rem  0.1rem 0.1rem #000000,
-     0.1rem  0.1rem 0.1rem #000000;
+    -0   -0.06rem 0.06rem #000000,
+     0   -0.06rem 0.06rem #000000,
+    -0    0.06rem 0.06rem #000000,
+     0    0.06rem 0.06rem #000000,
+    -0.06rem -0   0.06rem #000000,
+     0.06rem -0   0.06rem #000000,
+    -0.06rem  0   0.06rem #000000,
+     0.06rem  0   0.06rem #000000,
+    -0.06rem -0.06rem 0.06rem #000000,
+     0.06rem -0.06rem 0.06rem #000000,
+    -0.06rem  0.06rem 0.06rem #000000,
+     0.06rem  0.06rem 0.06rem #000000,
+    -0.06rem -0.06rem 0.06rem #000000,
+     0.06rem -0.06rem 0.06rem #000000,
+    -0.06rem  0.06rem 0.06rem #000000,
+     0.06rem  0.06rem 0.06rem #000000;
 }
 
 .header .mem-around {
 	position: absolute; /*позиционирование для лягушки. Не для слайдера!*/
 	left: 50%; /*позиционирование для лягушки. Не для слайдера!*/
-	top: 5%; /*позиционирование для лягушки. Не для слайдера!*/
+	top: 6%; /*позиционирование для лягушки. Не для слайдера!*/
 	width: 6%;
 	height: auto;
 	offset-path: path('m-259.532715,95.338944c0,-53.028619 115.873691,-95.981801 258.927631,-95.981801c143.05394,0 258.927631,42.953182 258.927631,95.981801c0,53.028619 -115.873691,95.981801 -258.927631,95.981801c-143.05394,0 -258.927631,-42.953182 -258.927631,-95.981801z');
@@ -71,7 +67,7 @@ h1 {
     width: 40vw;
     height: auto;
     overflow: hidden;
-    border: #5E2201 solid 0.2rem;
+    border: #5E2201 solid 0.15rem;
     background-color: #9E3802;
     border-radius: 1rem;
 }
@@ -130,29 +126,29 @@ h1 {
     overflow: hidden;
     font-family: ' Helvetica', 'Montserrat', sans-serif;
     color: #ffffff;
-    font-size: 1.8em;
+    font-size: 1.2em;
 }
 
 .quote {
     width: 20%;
     height: auto;
     text-shadow: 
-		-0   -0.1rem 0   #000000,
-		 0   -0.1rem 0   #000000,
-		-0    0.1rem 0   #000000,
-		 0    0.1rem 0   #000000,
-		-0.1rem -0   0   #000000,
-		 0.1rem -0   0   #000000,
-		-0.1rem  0   0   #000000,
-		 0.1rem  0   0   #000000,
-		-0.1rem -0.1rem 0   #000000,
-		 0.1rem -0.1rem 0   #000000,
-		-0.1rem  0.1rem 0   #000000,
-		 0.1rem  0.1rem 0   #000000,
-		-0.1rem -0.1rem 0   #000000,
-		 0.1rem -0.1rem 0   #000000,
-		-0.1rem  0.1rem 0   #000000,
-		 0.1rem  0.1rem 0   #000000;
+		-0   -0.06rem 0   #000000,
+		 0   -0.06rem 0   #000000,
+		-0    0.06rem 0   #000000,
+		 0    0.06rem 0   #000000,
+		-0.06rem -0   0   #000000,
+		 0.06rem -0   0   #000000,
+		-0.06rem  0   0   #000000,
+		 0.06rem  0   0   #000000,
+		-0.06rem -0.06rem 0   #000000,
+		 0.06rem -0.06rem 0   #000000,
+		-0.06rem  0.06rem 0   #000000,
+		 0.06rem  0.06rem 0   #000000,
+		-0.06rem -0.06rem 0   #000000,
+		 0.06rem -0.06rem 0   #000000,
+		-0.06rem  0.06rem 0   #000000,
+		 0.06rem  0.06rem 0   #000000;
 }
 
 input {
@@ -178,15 +174,15 @@ input {
 .custom {
     opacity: 1;
     display: block;
-    padding: 0.5rem;
-    width: 1rem;
-    height:1rem;
+    padding: 0.1rem;
+    width: 0.3rem;
+    height:0.3rem;
     opacity: 0.7;
     background-color: #5d2100;
     cursor: pointer;
     clip-path: circle(20% at 50% 50%);
-    height: 5em;
-    width: 5em;
+    height: 3.5em;
+    width: 3.5em;
 }
 
 #radio-1:checked ~ .slider-controls label:nth-child(1),
@@ -260,6 +256,10 @@ input {
     .slider-wrapper {
         width: 60vw;
     }
+
+    .custom {
+        width: 3em;
+    }
 }
 
 @media (max-width: 767px) {
@@ -270,7 +270,7 @@ input {
     }
     
     h1 {
-        font-size: 4em;
+        font-size: 3em;
     }
 
     .header .mem-around {
@@ -287,6 +287,10 @@ input {
         100%{
             offset-distance:93%;
         }
+    }
+
+    .custom {
+        width: 3em;
     }
 
     .slider-wrapper {
@@ -315,7 +319,7 @@ input {
     }
     
     h1 {
-        font-size: 4em;
+        font-size: 2.5em;
     }
 
     .header .mem-around {
