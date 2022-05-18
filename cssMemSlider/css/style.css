@@ -307,7 +307,6 @@ input {
     .slider-controls {
         margin-top: 1vh;
         margin-bottom: 1vh;
-        padding: 0 1%;
         display: flex;
         justify-content: center;
         flex-direction: column-reverse;
@@ -316,6 +315,10 @@ input {
     .quote-wrapper {
         padding-top: 1vh;
         padding-bottom: 1vh;
+    }
+
+    .quote {
+        padding-left: 0.3%;
     }
 }
 
