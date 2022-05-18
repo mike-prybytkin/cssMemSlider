@@ -81,16 +81,17 @@ h1 {
 }
 
 .quote-wrapper {
-    gap: 1%;
+    overflow: hidden;
 }
 
 .slide {
     width: 20%;
     height: 60vh;
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 97% 97%;
     transition: all 0.5s ease-in-out;
+    border-radius: 7%;
 }
 
 .mem-1 {
@@ -117,7 +118,6 @@ h1 {
 .slider-controls {
     margin-top: 1vh;
     margin-bottom: 1vh;
-    padding: 0 1%;
     display: flex;
     justify-content: space-between;
 }
@@ -131,6 +131,7 @@ h1 {
 }
 
 .quote {
+    padding-left: 0.5%;
     width: 20%;
     height: auto;
     text-shadow: 
@@ -159,6 +160,7 @@ input {
 .navigation {
     display: flex;
     justify-content: center;
+    padding-left: 1%;
 }
 
 .label {
@@ -176,14 +178,14 @@ input {
     opacity: 1;
     display: block;
     padding: 0.1rem;
-    width: 0.3rem;
-    height:0.3rem;
+    width: 0.2rem;
+    height:0.2rem;
     opacity: 0.7;
     background-color: #5d2100;
     cursor: pointer;
     clip-path: circle(20% at 50% 50%);
     height: 3.5em;
-    width: 3.5em;
+    width: 3em;
 }
 
 #radio-1:checked ~ .slider-controls label:nth-child(1),
